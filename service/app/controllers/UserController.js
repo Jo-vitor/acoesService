@@ -42,7 +42,7 @@ const login = async (req,res) => {
             "investido": user.investido,
             token});
     } catch (error) {
-        return res.status(500).send(error);
+        return res.status(500).send(error.message);
     }
 };
 const rentabilidadeCarteira = async (req,res) => {
