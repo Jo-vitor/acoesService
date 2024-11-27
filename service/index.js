@@ -26,7 +26,7 @@ app.use('/ativo', validacaoToken, AtivoRouter);
     await sequelize.sync({ force: true });
     console.log("All models were synchronized successfully.");
     
-    app.listen(5000, "34.198.129.98", () => {
+    app.listen(5000, "0.0.0.0", () => {
       console.log(`Server is up and running on port 5000`);
     });
   } catch (error) {
